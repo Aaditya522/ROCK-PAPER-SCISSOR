@@ -132,22 +132,14 @@ int main(){
         }
         else{
             if((str1 == "rock" && str2 == "scissor") || (str1 == "paper" && str2 == "rock") || (str1 == "scissor" && str2 == "paper")){
-                if (str1 == "rock" && str2 == "scissor") {
-                    cout << "Player's ROCK and Bot's SCISSOR" << endl;
-                } 
-                else if (str1 == "paper" && str2 == "rock") {
-                    cout << "Player's PAPER and Bot's ROCK" << endl;
-                } 
-                else if (str1 == "scissor" && str2 == "paper") {
-                    cout << "Player's SCISSOR and Bot's PAPER" << endl;
-                }
                 
+                cout<<"Player's: "<<str1<<" and "<<" Bot's: "<<str2<<endl;
                 p_score = p.points();
                 cout << "Player's score: " << p_score << endl;
                 cout << "Bot's score: " << b_score << endl << endl;
             }   // PLAYER winning;
             else{
-                cout << "Bot's Advantage" << endl;
+                cout<<"Player's: "<<str1<<" and "<<" Bot's: "<<str2<<endl;
                 b_score = b.points();
                 cout << "Player's score: " << p_score << endl;
                 cout << "Bot's score: " << b_score << endl << endl;
